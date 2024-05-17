@@ -20,6 +20,13 @@ app.get('/hola-mundo',(req,res)=>{
         res.send('Hola Mundo en su respectiva ruta')
 });
 
+app.get('/salidas',(req,res)=>{
+    res.render('salidas',{
+        nombre: 'Armando David',
+        titulo: 'Curso de Node'
+    });
+});
+
 app.get('/elements',(req,res)=>{
     res.render('elements',{
         nombre: 'Armando David',
